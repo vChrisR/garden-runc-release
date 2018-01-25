@@ -1,0 +1,15 @@
+---
+name: containerd
+
+packages:
+- containerd
+- runc
+
+templates:
+  bin/containerd_ctl.erb: bin/containerd_ctl
+  config/config.toml.erb: config/config.toml
+
+properties:
+  containerd.runtime_path:
+    description: "Path to the runtime to use."
+    default: /var/vcap/packages/runc/bin/runc
