@@ -43,6 +43,7 @@ files:
   - code.cloudfoundry.org/guardian/rundmc/peas/privchecker/*.go # gosub
   - code.cloudfoundry.org/guardian/rundmc/pidreader/*.go # gosub
   - code.cloudfoundry.org/guardian/rundmc/preparerootfs/*.go # gosub
+  - code.cloudfoundry.org/guardian/rundmc/runcontainerd/*.go # gosub
   - code.cloudfoundry.org/guardian/rundmc/runrunc/*.go # gosub
   - code.cloudfoundry.org/guardian/rundmc/stopper/*.go # gosub
   - code.cloudfoundry.org/guardian/sysinfo/*.go # gosub
@@ -124,7 +125,6 @@ files:
   - github.com/containerd/containerd/vendor/github.com/opencontainers/image-spec/identity/*.go # gosub
   - github.com/containerd/containerd/vendor/github.com/opencontainers/image-spec/specs-go/*.go # gosub
   - github.com/containerd/containerd/vendor/github.com/opencontainers/image-spec/specs-go/v1/*.go # gosub
-  - github.com/containerd/containerd/vendor/github.com/opencontainers/runtime-spec/specs-go/*.go # gosub
   - github.com/containerd/containerd/vendor/github.com/pkg/errors/*.go # gosub
   - github.com/containerd/containerd/vendor/github.com/sirupsen/logrus/*.go # gosub
   - github.com/containerd/containerd/vendor/golang.org/x/net/context/*.go # gosub
