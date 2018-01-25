@@ -11,5 +11,5 @@ templates:
 
 properties:
   containerd.runtime_path:
-    description: "Path to the runtime to use."
+    description: "Path to the runtime containerd should use."
     default: /var/vcap/packages/runc/bin/runc

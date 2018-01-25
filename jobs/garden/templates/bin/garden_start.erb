@@ -101,6 +101,9 @@ server --skip-setup \
 <% if p("garden.allow_host_access") %> \
   --allow-host-access \
 <% end %> \
+<% if_p("garden.containerd_socket") do |containerd_socket| %> \
+  --containerd-socket=<%= containerd_socket %> \
+<% end %> \
 <% if_p("garden.debug_listen_address") do |debug_listen_address| %> \
   <% debug_ip, debug_port = debug_listen_address.split(":") %> \
   --debug-bind-ip=<%= debug_ip %> \
